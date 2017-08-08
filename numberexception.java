@@ -1,30 +1,30 @@
 
 
 import java.util.Scanner;
-public class numberexception {
+public class numberException {
 
 	public static void main(String[] args) {
 		String[] anArray;
 		String answer;
 		int wordAmount;
 		Scanner scan = new Scanner(System.in);
-		numberexception numberexception = new numberexception();
+		numberException numberException = new numberException();
 		/*zmienna zadeklarowana w ciele metody main, to nie ta sama 
 		 * zmienna co będąca wynikiem metody */
 		
 		do{
 			print("Ile słów chcesz wpisać?");
 		answer = scan.next();
-		numberexception.tryParseInt(answer);
+		numberException.tryParseInt(answer);
 		
-			if(numberexception.tryParseInt(answer)){
+			if(numberException.tryParseInt(answer)){
 				print("Podałeś wartość liczbową");
 			} else{
 				print("Nie podałeś wartości liczbowej");
 			}
-		}while(!numberexception.tryParseInt(answer));
+		}while(!numberException.tryParseInt(answer));
 		
-			wordAmount = numberexception.parseInt(answer);
+			wordAmount = numberException.parseInt(answer);
 			anArray = new String[wordAmount];
 			
 		for(int i =0; i<=wordAmount-1;i++){
