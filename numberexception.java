@@ -31,7 +31,7 @@ public class numberException {
 			System.out.println("Podaj słowo "+i);
 			anArray[i]=scan.next();
 		}
-			print("Podane liczby to ");
+			print("Podane słowa to ");
 		for(int i =0; i <=wordAmount-1; i++){
 			System.out.println(anArray[i]);
 		}
